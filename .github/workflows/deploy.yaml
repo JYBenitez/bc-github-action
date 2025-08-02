@@ -1,18 +1,10 @@
-name: "Deploy codigofacilito!"
-
-on:
-  push:
-    branches:
-      - main
+name: Deploy to server!
+on: push
 
 jobs:
-  deploy-codigofacilito:
+  first-jobs:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Hola mundo!
         uses: actions/checkout@v2
-      - run: echo "Starting deployment process for codigofacilito..."
-      - run: echo "Deploying codigofacilito!"
-      - run: echo "Deployment completed successfully!"
-      - run: echo "You can now access codigofacilito at https://codigofacilito.com"
-      - run: echo "Thank you for using codigofacilito!"
+      - run: echo "Hola mundo desde la rama main!"
