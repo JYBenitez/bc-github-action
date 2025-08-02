@@ -9,8 +9,10 @@ jobs:
   deploy-codigofacilito:
     runs-on: ubuntu-latest
     steps:
-      run: echo "Starting deployment process for codigofacilito..."
-      run: echo "Deploying codigofacilito!"
-      run: echo "Deployment completed successfully!"
-      run: echo "You can now access codigofacilito at https://codigofacilito.com"
-      run: echo "Thank you for using codigofacilito!"
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - run: echo "Starting deployment process for codigofacilito..."
+      - run: echo "Deploying codigofacilito!"
+      - run: echo "Deployment completed successfully!"
+      - run: echo "You can now access codigofacilito at https://codigofacilito.com"
+      - run: echo "Thank you for using codigofacilito!"
