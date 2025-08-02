@@ -7,4 +7,11 @@ jobs:
     steps:
       - name: Hola mundo!
         uses: actions/checkout@v2
-      - run: echo "Hola mundo desde la rama main!"
+      - run: echo "Hola mundo desde first-jobs!"
+
+  second-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hola mundo!
+        uses: actions/checkout@v2
+      - run: echo "Hola mundo desde second-jobs!"
